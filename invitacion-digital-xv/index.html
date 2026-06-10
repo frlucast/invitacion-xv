@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mis XV Años - Sofía</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <!-- Estilos -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="no-scroll">
+
+    <!-- SOBRE ANIMADO DE BIENVENIDA -->
+    <div id="envelope-overlay">
+        <div class="envelope-wrapper" id="envelope-click">
+            <div class="envelope">
+                <div class="flap"></div>
+                <div class="pocket"></div>
+                <div class="letter">
+                    <p>Mis XV Años</p>
+                    <p>Sofía</p>
+                </div>
+                <div class="seal">
+                    <i class="fas fa-heart"></i>
+                </div>
+            </div>
+            <p class="envelope-hint">Toca para abrir la invitación</p>
+        </div>
+    </div>
+
+    <!-- Música de fondo (Asegúrate de que el archivo exista en esta ruta) -->
+    <audio id="bg-music" src="assets/music/musica-xv.mp3"></audio>
+
+    <!-- REPRODUCTOR FLOTANTE -->
+    <div class="music-player-floating">
+        <button class="control-btn"><i class="fas fa-play"></i></button>
+        <div class="music-waves"><span></span><span></span><span></span></div>
+    </div>
+
+    <!-- PORTADA -->
+    <header class="hero">
+        <div class="hero-content">
+            <p class="subtitle">MIS XV AÑOS</p>
+            <div class="hero-image-wrapper">
+                <img src="assets/images/quinceanera-photo.jpg" alt="Quinceañera Sofía">
+                <h1 id="quin-name">Sofía</h1>
+            </div>
+            <p class="subtitle" id="hero-date">9 . MAYO . 2026</p>
+        </div>
+    </header>
+
+    <!-- FRASE INICIAL -->
+    <section class="quote-section">
+        <div class="flower-divider"></div>
+        <p class="italic-text" id="quote-text">"Hay momentos en la vida que son especiales por sí solos, pero compartirlos con las personas que quieres los hace inolvidables."</p>
+        <div class="flower-divider"></div>
+    </section>
+
+    <!-- SEPARADOR 1 -->
+    <div class="separator-img">
+        <img src="assets/images/foto3.jpg" alt="Sofía XV">
+    </div>
+
+    <!-- SECCIÓN PADRES E INVITACIÓN -->
+    <section class="parents-invitation">
+        <div class="flower-divider"></div>
+        <p>Con el amor de mis padres:</p>
+        <h2 class="signature" id="father-name">Nuevo Nombre del Padre</h2>
+        <p>&</p>
+        <h2 class="signature" id="mother-name">Nuevo Nombre de la Madre</h2>
+
+        <div style="margin-top: 40px;">
+            <p>Tenemos el honor de invitarlos este</p>
+            <h2 class="signature" id="invitation-full-date" style="font-size: 2.2rem;">9 de Mayo del 2026</h2>
+        </div>
+
+        <div style="margin-top: 40px;">
+            <p>Faltan:</p>
+            <div class="countdown-container">
+                <div class="time-box"><span id="days">00</span><small>DÍAS</small></div>
+                <div class="time-box"><span id="hours">00</span><small>HORAS</small></div>
+                <div class="time-box"><span id="minutes">00</span><small>MINS</small></div>
+                <div class="time-box"><span id="seconds">00</span><small>SEGS</small></div>
+            </div>
+            <p id="countdown-note">¡Te espero para celebrar este gran día!</p>
+        </div>
+        <div class="flower-divider"></div>
+    </section>
+
+    <!-- SEPARADOR 2 -->
+    <div class="separator-img">
+        <img src="assets/images/foto1.jpg" alt="Sofía XV">
+    </div>
+
+    <!-- DETALLES DEL EVENTO -->
+    <section class="event-details">
+        <div class="flower-divider"></div>
+        <span class="icon"><i class="fas fa-calendar-alt"></i></span>
+        <h2>Cuándo y Dónde</h2>
+        <div class="date-row">
+            <div id="event-day">SÁBADO</div>
+            <div class="divider"></div>
+            <div id="event-month">09 MAY</div>
+            <div class="divider"></div>
+            <div id="event-year">2026</div>
+        </div>
+
+        <div class="location-container">
+            <div class="location-item">
+                <img src="assets/images/iglesia.jpg" alt="Ceremonia" class="location-img" id="img-ceremonia">
+                <p id="text-ceremonia"><strong>Ceremonia Religiosa</strong><br>Parroquia de San Francisco, 18:00 hrs.</p>
+                <button class="btn-secondary open-map" data-map="ceremonia">VER UBICACIÓN</button>
+            </div>
+            <div class="location-item">
+                <img src="assets/images/salon.jpg" alt="Recepción" class="location-img" id="img-recepcion">
+                <p id="text-recepcion"><strong>Recepción</strong><br>Salón de Eventos "El Castillo", 20:00 hrs.</p>
+                <button class="btn-secondary open-map" data-map="recepcion">VER UBICACIÓN</button>
+            </div>
+        </div>
+        <div class="flower-divider"></div>
+    </section>
+
+    <!-- SEPARADOR 3 -->
+    <div class="separator-img">
+        <img src="assets/images/foto2.jpg" alt="Sofía XV">
+    </div>
+
+    <!-- ITINERARIO -->
+    <section class="itinerary-section">
+        <div class="flower-divider"></div>
+        <h2 class="signature">Itinerario</h2>
+        <div class="itinerary-grid">
+            <div class="itinerary-item">
+                <i class="fas fa-church"></i>
+                <p><strong>18:00 HRS</strong><br>Ceremonia</p>
+            </div>
+            <div class="itinerary-item">
+                <i class="fas fa-glass-cheers"></i>
+                <p><strong>20:00 HRS</strong><br>Recepción</p>
+            </div>
+            <div class="itinerary-item">
+                <i class="fas fa-utensils"></i>
+                <p><strong>21:30 HRS</strong><br>Cena</p>
+            </div>
+            <div class="itinerary-item">
+                <i class="fas fa-music"></i>
+                <p><strong>22:30 HRS</strong><br>Baile</p>
+            </div>
+        </div>
+        <div class="flower-divider"></div>
+    </section>
+
+    <!-- SEPARADOR 4 -->
+    <div class="separator-img">
+        <img src="assets/images/foto4.jpg" alt="Sofía XV">
+    </div>
+
+    <!-- CÓDIGO DE VESTIMENTA -->
+    <section class="dress-code">
+        <div class="flower-divider"></div>
+        <span class="icon"><i class="fas fa-user-tie"></i></span>
+        <h2>Código de Vestimenta</h2>
+        <p><strong id="dress-type">FORMAL</strong></p>
+        <p class="small-text" id="dress-note">Hombres: Traje / Mujeres: Vestido Largo o Cocktail.<br>(Agradecemos evitar el color rosa pastel).</p>
+        <div class="flower-divider"></div>
+    </section>
+
+    <!-- SEPARADOR 5 -->
+    <div class="separator-img">
+        <img src="assets/images/quinceanera-photo.jpg" alt="Sofía XV">
+    </div>
+
+    <!-- REGALOS -->
+    <section>
+        <div class="flower-divider"></div>
+        <span class="icon"><i class="fas fa-gift"></i></span>
+        <h2>Mesa de Regalos</h2>
+        <p>Tu presencia es mi mejor regalo, pero si deseas obsequiarme algo, puedes hacerlo mediante una transferencia o lluvia de sobres.</p>
+        <button class="btn-primary" id="open-bank-modal">DATOS BANCARIOS</button>
+        <div class="flower-divider"></div>
+    </section>
+
+    <!-- SEPARADOR 6 -->
+    <div class="separator-img">
+        <img src="assets/images/foto1.jpg" alt="Sofía XV">
+    </div>
+
+    <!-- RSVP (CONFIRMACIÓN) -->
+    <section>
+        <div class="flower-divider"></div>
+        <span class="icon"><i class="fas fa-envelope-open-text"></i></span>
+        <h2>Confirma tu Asistencia</h2>
+        <p>Por favor confirma antes del <span id="rsvp-deadline">15 de junio</span>.</p>
+        <form id="rsvp-form" class="rsvp-form">
+            <input type="text" id="guest-name" placeholder="Tu nombre completo" required>
+            <input type="number" id="guest-count" placeholder="Número de personas" min="1">
+            <div class="radio-group">
+                <label><input type="radio" name="asistencia" value="Asistirá" required> Sí asistiré</label>
+                <label><input type="radio" name="asistencia" value="No asistirá"> No podré asistir</label>
+            </div>
+            <textarea id="guest-message" placeholder="Déjame un mensaje para mi álbum de recuerdos"></textarea>
+            <button type="submit" class="btn-submit">ENVIAR RESPUESTA</button>
+        </form>
+        <div class="flower-divider"></div>
+    </section>
+
+    <!-- MODAL DE DATOS BANCARIOS -->
+    <div id="bank-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2>Datos Bancarios</h2>
+            <p id="regalo-banco">Banco: Mi Banco</p>
+            <p id="regalo-titular">A nombre de: Sofía Pérez</p>
+            <p>CLABE:</p>
+            <h3 id="clabe-number">1234 5678 9012 3456 78</h3>
+            <button class="btn-primary" id="copy-clabe">COPIAR CLABE</button>
+        </div>
+    </div>
+
+    <!-- MODAL DE MAPA -->
+    <div id="map-modal" class="modal">
+        <div class="modal-content map-modal-content">
+            <span class="close-modal" id="close-map-modal">&times;</span>
+            <h2 id="map-title" class="signature">Ubicación</h2>
+            <div id="map-iframe-container">
+                <!-- El iframe se cargará dinámicamente -->
+            </div>
+        </div>
+    </div>
+
+    <!-- MODAL DE DESARROLLADOR -->
+    <div id="dev-modal" class="modal">
+        <div class="modal-content dev-modal-content">
+            <span class="close-modal" id="close-dev-modal">&times;</span>
+            <div class="dev-info">
+                <img id="dev-logo" src="" alt="Logo Desarrollador" class="dev-logo">
+                <h2 id="dev-name" class="signature"></h2>
+                <p><i class="fas fa-phone"></i> <span id="dev-phone"></span></p>
+                <p><i class="fas fa-envelope"></i> <span id="dev-email"></span></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>desarrollado por LUBRA Estudio &copy; 2026 <button id="open-dev-modal" class="btn-dev-more">ver más</button></p>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="scripts.js"></script>
+</body>
+</html>

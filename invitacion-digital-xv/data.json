@@ -1,0 +1,49 @@
+{
+  "nombre": "Sofía",
+  "frase": "Hay momentos en la vida que son especiales por sí solos, pero compartirlos con las personas que quieres los hace inolvidables.",
+  "fechaEvento": "2026-10-09T19:00:00",
+  "heroFecha": "9 . OCTUBRE . 2026",
+  "padres": {
+    "papa": "Nuevo Nombre del Padre",
+    "mama": "Nuevo Nombre de la Madre"
+  },
+  "detallesEvento": {
+    "diaSemana": "SÁBADO",
+    "diaMes": "09 OCT",
+    "anio": "2026",
+    "invitacionTexto": "9 de Octubre del 2026"
+  },
+  "ubicaciones": {
+    "ceremonia": {
+      "lugar": "Parroquia de San Francisco",
+      "hora": "18:00 hrs.",
+      "imagen": "assets/images/iglesia.jpg",
+      "mapa": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3594.393!2d-100.312!3d25.674!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjXCsDQwJzI5LjQiTiAxMDDCsDE4JzQzLjIiVw!5e0!3m2!1ses!2smx!4v1715000000000"
+    },
+    "recepcion": {
+      "lugar": "Salón de Eventos \"El Castillo\"",
+      "hora": "20:00 hrs.",
+      "imagen": "assets/images/salon.jpg",
+      "mapa": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3595.667!2d-100.352!3d25.615!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjXCsDM2JzU3LjMiTiAxMDDCsDIxJzA5LjAiVw!5e0!3m2!1ses!2smx!4v1715000000001"
+    }
+  },
+  "vestimenta": {
+    "tipo": "FORMAL",
+    "nota": "Hombres: Traje / Mujeres: Vestido Largo o Cocktail.<br>(Agradecemos evitar el color rosa pastel)."
+  },
+  "mesaRegalos": {
+    "banco": "Mi Banco",
+    "titular": "Sofía Pérez",
+    "clabe": "1234 5678 9012 3456 78"
+  },
+  "confirmacion": {
+    "limite": "15 de junio",
+    "scriptUrl": "https://script.google.com/macros/s/AKfycbxNLbc2OALr9WKl1WHHqwt9khtCBrglZekXKpAYoVphIWJT7qvP9hJkQGftgvbMomXi/exec"
+  },
+  "desarrollador": {
+    "nombre": "LUBRA Estudio",
+    "logo": "assets/images/logo-lubra.png",
+    "telefono": "+52 123 456 7890",
+    "correo": "contacto@lubraestudio.com"
+  }
+}
