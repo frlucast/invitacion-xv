@@ -94,11 +94,17 @@ function populateUI(data) {
   // RSVP
   document.getElementById('rsvp-deadline').textContent = data.confirmacion.limite;
   
-  // Desarrollador
-  document.getElementById('dev-logo').src = data.desarrollador.logo;
-  document.getElementById('dev-name').textContent = data.desarrollador.nombre;
-  document.getElementById('dev-phone').textContent = data.desarrollador.telefono;
-  document.getElementById('dev-email').textContent = data.desarrollador.correo;
+  // Desarrollador - Carga de datos y generación de enlaces
+  const dev = data.desarrollador;
+  const phoneClean = dev.telefono.replace(/\s+/g, '');
+  
+  document.getElementById('dev-logo').src = dev.logo;
+  document.getElementById('dev-name').textContent = dev.nombre;
+  document.getElementById('dev-phone').textContent = dev.telefono;
+  document.getElementById('dev-phone-link').href = `tel:${phoneClean}`;
+  document.getElementById('dev-whatsapp-link').href = `https://wa.me/${phoneClean.replace('+', '')}`;
+  document.getElementById('dev-email').textContent = dev.correo;
+  document.getElementById('dev-email-link').href = `mailto:${dev.correo}`;
 
   // Título de la pestaña
   document.title = `Mis XV Años - ${data.nombre}`;
